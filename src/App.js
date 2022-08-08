@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import Profile from './Profile';
 
 class App extends React.Component {
   constructor(props) {
@@ -11,7 +12,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <Header promile={this.state.promile} />
+      <><Header promile={this.state.promile} /><Profile /></>
     );
   }
 }
