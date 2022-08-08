@@ -1,18 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+import Header from './Header';
 
 class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      promile: 0.15
+    }
+  }
 
   render() {
-  return (
-    <header>
-        <div className="row">
-            <div className="logo">
-                <img id="logo" src="img/logo-drink.png" />
-            </div>
-            <div id="promile" class="promile">0.22</div>
-        </div>
-    </header>
+    return (
+      <Header promile={this.state.promile} />
     );
   }
 }
